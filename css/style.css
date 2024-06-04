@@ -1,9 +1,9 @@
 /* Navigation styles */
-
+/* { outline: 1px solid red; }*/
   
   .nav {
     display: flex;
-    background-color: black;
+    background-color: rgb(219, 219, 219);
     padding: 20px;
   }
   
@@ -22,25 +22,20 @@
   }
   
   .right a {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     font-size: 18px;
     text-decoration: none;
-    font-family:arial;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    align-content: right;
   }
   
-  .right button {
-    background-color: yellow;
+  
+  .logo { 
     color:black;
-    font-size: 16px;
-    padding: 15px;
-    width: 50%;
-  }
-  
-  .logo {
-    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     font-size: 24px;
-    width: 50%;
+    width: 100%;
   }
   
   /* Column styles */
@@ -52,51 +47,56 @@
     margin: 0 auto;
   }
   
-  .meal1, .meal2, .meal3 {
-    height: 1603px;
+  .intro, .meal2, .meal3 {
+    height: 1200px;
     width: 100%;
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
   }
-  .meal1 {
-    margin-top:20px;
-    background-image: url("../images/steak.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  
-  }
-  .meal2 {
-    background-image: url("../images/soup.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .meal3 {
-    background-image: url("../images/cheesecake.png");
+
+
+    
+  .work2 {
+    display: flex;
     background-repeat: no-repeat;
     background-position: center;
   }
   
   .text {
-    background: rgb(0,0,0,0.7);
+    background: rgb(255, 255, 255);
     width: 100%;
     padding: 20px 40px;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    
   }
   .text p {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    align-items: flex-end;
+  
   }
   .text h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Sen, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    width:100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .text h2{
+    font-size:24px;
+    text-align: center;
   }
   
   /* Footer Styles */
   .footer {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
-    background: black;
+    background: rgb(219, 219, 219);
     height: 100px;
   }
   
@@ -107,14 +107,77 @@
   }
   
   .ig {
-    color: red;
+    color: rgb(47, 0, 255);
   }
   
   .fb {
-    color:skyblue;
+    color:rgb(14, 142, 192);
   }
   
   .tw {
-    color: yellow;
+    color: rgb(82, 82, 177);
   }
+ 
+ .flexcontainer{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+ }
+
+ .banner{
+  align-content: center;
+ }
+ .containerGrid{
+  width: inherit;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "work1 work2 work3"
+  "work4 work5 work6";
+ }
+
+ .work1{
+  grid-area: work1;
+ }
+ .work2{
+  grid-area: work2;
+ }
+ .work3{
+  grid-area: work3;
+ }
+ .work4{
+  grid-area: work4;
+ }
+ .work5{
+  grid-area: work5;
+
+ }
+ .work6{
+  grid-area: work6;
+
+ }
+
+ #CTA {
+  grid-area: CTA;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.button{
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 40px;
+  
+}
+
+
   
